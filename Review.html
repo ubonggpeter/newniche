@@ -1,581 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CapCut Pro - Selar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #4d004d;
+      padding: 1em;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 97%;
+      z-index: 1000;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .menu-toggle {
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 1em;
+      background-color: #fff;
+      color: #4d004d;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .dropdown a {
+      display: block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: #4d004d;
+    }
+    .dropdown a:hover {
+      background-color: #f0f0f0;
+    }
+    .container {
+      padding: 1em;
+    }
+    .hero-image {
+      width: 100%;
+      background-color: #dcdcdc;
+      text-align: center;
+      padding-top: 4em;
+    }
+    .product-title {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+    .card {
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 1em;
+      margin-top: 2em;
+    }
 
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    .disclaimer {
+      color: #990000;
+      font-style: italic;
+    }
+
+    .highlight {
+      color: green;
+      font-weight: bold;
+    }
     
-
-    <!-- Primary Meta Tags -->
-  <title>Nuvia Streams Website  Reviews (Is Nuvia Streams Legit, Real, Or Scam?)How to Register And Earn?</title>
-  <meta name="description" content="Register on Nuvia Streams Platform and start earning money online by streaming, reviewing, and referring. One-time registration fee to unlocks all opportunities.">
-  <meta name="keywords" content="Nuvia Streams registration, earn online, streaming jobs, smartphone jobs, Nuvia Streams withdrawal, referrals, reviews">
-  <meta name="author" content="Nuvia Streams">
-  <link rel="canonical" href="https://nuviawebsite.com/Review.html">
-
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Nuvia Streams Platform | Register & Start Earning">
-  <meta property="og:description" content="Join Nuvia Streams today for online earnings via streaming, reviewing, and referrals. registration includes full access.">
-  <meta property="og:image" content="https://nuviawebsite.com/Nuvia-Streams-N-coin-seven.jpg">
-  <meta property="og:url" content="https://nuviawebsite.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nuvia Streams Platform | Register & Earn Online">
-  <meta name="twitter:description" content="Nuvia Streams lets you earn by streaming music, watching videos, writing reviews, and referrals. Register now .">
-  <meta name="twitter:image" content="https://nuviawebsite.com/nuvia-logo.png">
-
-  <!-- Preload & Fonts -->
-  <link rel="preload" href="style.css" as="style">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="nuvia-streams-merchant-rewards-six.jpg" type="image/png">
-
-  <!-- Structured Data: Website, Organization, Breadcrumbs, Product/Offer, FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Nuvia Streams",
-    "url": "https://nuviawebsite.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://nuviawebsite.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+    label {
+      display: block;
+      margin-bottom: 0.3em;
+      font-weight: bold;
     }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Nuvia Streams",
-    "url": "https://nuviawebsite.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://nuviawebsite.com/nuvia-streams-enrollment-plans-twelve.jpg",
-      "width": 250,
-      "height": 250
-    },
-    "sameAs": [
-      "https://linktr.ee/Nuvia_Wesite",
-      "https://www.instagram.com/Nuvia_Wesite",
-      "https://twitter.com/Nuvia_Wesite"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nuviawebsite.com"},
-      {"@type": "ListItem", "position": 2, "name": "Register", "item": "https://nuviawebsite.com/nuvia-streams-daily-reward-sixteen.jpg"}
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Nuvia Streams Registration Package",
-    "image": "https://nuviawebsite.com/nuvia-streams-nationwide-registration-fourteen.jpg",
-    "description": "One-time fee  grants full access to all earning opportunities on Nuvia Streams Platform.",
-    "brand": {"@type": "Organization", "name": "Nuvia Streams"},
-    "offers": {
-      "@type": "Offer",
-      "url": "https://nuviawebsite.com/Review.html",
-      "priceCurrency": "NGN",
-      "price": "8500",
-      "availability": "https://schema.org/InStock"
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 4px;
+      border: 1px solid #ccc;
     }
-  }
-  </script>
+    .submit-btn {
+      background-color: #4d004d;
+      color: white;
+      border: none;
+      padding: 0.7em 1.5em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .submit-btn:hover {
+      background-color: #3a003a;
+    }
+    .review-section {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .review-score {
+      font-size: 2em;
+    }
+    .stars {
+      color: gold;
+      font-size: 1.5em;
+    }
+    .chat-popup-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+      min-height: 60px;
+    }
+    .chat-popup {
+      display: none;
+      align-items: center;
+      background: #e6e6e6;
+      border-radius: 10px;
+      padding: 1em;
+      margin: 0 auto;
+      width: fit-content;
+      max-width: 90%;
+      transform: translateX(-100%);
+      animation: slideIn 0.5s forwards;
+    }
+    .chat-popup.slide-out {
+      animation: slideOut 0.5s forwards;
+    }
+    .chat-popup img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.8em;
+    }
+    /*.heroo-image {
+     text-align: center;
+     padding: 1em;
+     }
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type": "Question","name": "Is nuvia stream a scam?","acceptedAnswer": {"@type": "Answer","text": "Nuvia Streams is a scam  Platform that claims to be  a web-based earning site where users earn by streaming, reviewing, and referrals."}},
-      {"@type": "Question","name": "How much is the registration fee?","acceptedAnswer": {"@type": "Answer","text": "₦12,500 grants you full access to all earning features but check if it is a scam."}},
-      {"@type": "Question","name": "How do I withdraw my earnings?","acceptedAnswer": {"@type": "Answer","text": " nuvia claims that Withdrawals go directly to your bank account once you hit the minimum threshold check here to see if it is true."}},
-      {"@type": "Question","name": "Is Nuvia Streams an app?","acceptedAnswer": {"@type": "Answer","text": "No, Nuvia Streams is a web platform accessible via browser."}}
-    ]
-  }
-  </script>
+    .heroo-image img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+    }*/
 
-  <!-- Google Analytics (deferred) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SFNJZ2XVZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-    gtag('config', 'G-8SFNJZ2XVZ');
-  </script>
+/* ✅ Make all images responsive */
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5%;
+    }
 
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        display: flex;
+      }
+    }
+    @keyframes slideOut {
+      to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+   }
 
-        <link rel="shortcut icon" href="nuvia-logo.png" type=".png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="review.css">
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        display: flex;
+      }
+    }
+    @keyframes slideOut {
+      to {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+    .footer {
+      background-color: #4d004d;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <!-- Header Section -->
-       <!-- <div class="header">
-            <img src="nuvia-stream-logo.png" alt="Nuviastream It Logo"> 
-            <button onclick="openRegisterModal()"><img src="https://nuviamusics.com/images/people-outline.svg" class="" alt="TikTok"> Register Now</button> 
-        </div>-->
-
-        <!-- Video Section -->
-        <div class="video-container">
-            <div id="sales-commission" class="tab-content active">
-                <video autoplay="" loop="" playsinline="" controls="" muted="" class="appl1-hdvd-xx">
-                    <source src="nuvia-stream-intro-vid.mp4" type="video/mp4"> <!-- Local video file -->
-                    Your browser does not support the video tag.
-                </video>
-                 <!-- Open Register Modal -->
-            </div>
-        </div>
-
-
-
-<div class="button-container">
-    <a href="home.html" class="register-btn">
-        Click Here to Support Scam Reviews with any amount you have 
-        <svg viewBox="0 0 24 24">
-            <path d="M10 17l5-5-5-5v10z"></path>
-        </svg>
-    </a>
-</div>
-
-
-<!--<div class="slider">
-  <div class="slides" style="transform: translateX(-500%);">
-    <div class="slide">
-      <img src="first-nuvia-slide.jpg" alt="Slide 1">
-    </div>
-    <div class="slide">
-      <img src="second-nuvia-slide.jpg" alt="Slide 2">
-    </div>
-    <div class="slide">
-      <img src="third-nuvia-slide.jpg" alt="Slide 3">
-    </div>
-    <div class="slide">
-      <img src="fourth-nuvia-slide.jpg" alt="Slide 4">
-    </div>
-    <div class="slide">
-      <img src="https://nuviamusics.com/images/nstay.jpg" alt="Slide 5">
-    </div>
-    <div class="slide">
-      <img src="https://nuviamusics.com/images/nindustry.jpg" alt="Slide 6">
-    </div>
-    <div class="slide">
-      <img src="https://nuviamusics.com/images/ncapital.jpg" alt="Slide 7">
+  <div class="navbar">
+    <h1>Ms.Lillian</h1>
+    <div class="menu-toggle" onclick="toggleDropdown()">☰</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="LILIAN-SIGN-UP.HTML">Register</a>
+      <a href="#">Login</a>
     </div>
   </div>
-</div>-->
 
-<div class="dots">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot active"></span> 
-  <span class="dot"></span> 
-</div>
+  <div class="hero-image">
+    <img src="capcut-box.jpg" alt="CapCut Pro Box" >
+    <div class="product-title">CapCut Pro - PC + ANDROID + iOS</div>
+  </div>
 
-<script>
-  let currentIndex = 0;
-  const slides = document.querySelector('.slides');
-  const dots = document.querySelectorAll('.dot');
-  const totalSlides = dots.length;
+  <div class="container">
+    <div class="card">
+        <div class="heroo-image">
+            <img src="capcut-box.jpg" alt="CapCut Pro Box">
+            <div class="product-title">CapCut Pro - PC + ANDROID + iOS</div>
+          </div>
+        <div class="price-section">
+            CFA 2,213.28
+            <br>
+            <button class="closed-btn">Product sale closed</button>
+          </div>
+    
+          <div class="details-section">
+            <p><strong>DON’T SUBSCRIBE YOUR CAPCUT APP FOR THE NEXT 12 MONTHS. HERE IS A JUICIER FIX!</strong></p>
+            <p>Quit annoying lags, crashes or monthly pricey subscriptions for the next 12 months on your Capcut app</p>
+            <p>Choose peace of mind and take control of your content journey with <span class="highlight">CAPCUT PRO MEMBERSHIP</span> for just ₦5,000 instead of ₦9,800 that Capcut charges you per month.</p>
+    
+            <p class="disclaimer">DISCLAIMER: This is not a MOD version ❌ And yes, it’s Android, iOS and PC Supported!</p>
+    
+            <p>Slots are very limited, available for only the next 50 lucky persons 🔥</p>
+            <p>I bet, You don’t want to hear, “last spot has been taken” 😩</p>
+    
+            <p>Order now on Whatsapp via the link below:</p>
+            <p><a href="https://www.link/kvormf">https://www.link/kvormf</a></p>
+          </div>
+    </div>
 
-  function showSlide(index) {
-    if (index >= totalSlides) {
-      currentIndex = 0;
-    } else if (index < 0) {
-      currentIndex = totalSlides - 1;
-    } else {
-      currentIndex = index;
+    
+
+    
+
+    <div class="card review-section">
+      <h2>Customer Reviews</h2>
+      <div class="review-score" id="score">2.00</div>
+      <div class="stars" id="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="chat-popup-container">
+      <div class="chat-popup" id="chat">
+        <img src="https://via.placeholder.com/40" alt="User Profile">
+        <span id="chat-message">Hello</span>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="hero-image">
+            <img src="capcut-box.jpg" alt="CapCut Pro Box">
+            <div class="product-title">CapCut Pro - PC + ANDROID + iOS</div>
+          </div>
+        <div class="price-section">
+            CFA 2,213.28
+            <br>
+            <button class="closed-btn">Product sale closed</button>
+          </div>
+    
+          <div class="details-section">
+            <p><strong>DON’T SUBSCRIBE YOUR CAPCUT APP FOR THE NEXT 12 MONTHS. HERE IS A JUICIER FIX!</strong></p>
+            <p>Quit annoying lags, crashes or monthly pricey subscriptions for the next 12 months on your Capcut app</p>
+            <p>Choose peace of mind and take control of your content journey with <span class="highlight">CAPCUT PRO MEMBERSHIP</span> for just ₦5,000 instead of ₦9,800 that Capcut charges you per month.</p>
+    
+            <p class="disclaimer">DISCLAIMER: This is not a MOD version ❌ And yes, it’s Android, iOS and PC Supported!</p>
+    
+            <p>Slots are very limited, available for only the next 50 lucky persons 🔥</p>
+            <p>I bet, You don’t want to hear, “last spot has been taken” 😩</p>
+    
+            <p>Order now on Whatsapp via the link below:</p>
+            <p><a href="https://www.link/kvormf">https://www.link/kvormf</a></p>
+            
+          </div>
+    </div>
+
+    
+
+    
+
+    <div class="card review-section">
+      <h2>Customer Reviews</h2>
+      <div class="review-score" id="score">2.00</div>
+      <div class="stars" id="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="chat-popup-container">
+      <div class="chat-popup" id="chat">
+        <img src="https://via.placeholder.com/40" alt="User Profile">
+        <span id="chat-message">Hello</span>
+      </div>
+    </div>
+
+    <h1>TESTIMONIES BY MEMBERS</h1>
+
+    <div class="card">
+        <div class="hero-image">
+            <img src="capcut-box.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">CapCut Pro - PC + ANDROID + iOS</div>
+          </div>
+        <div class="price-section">
+            CFA 2,213.28
+            <br>
+            <button class="closed-btn">Product sale closed</button>
+          </div>
+    
+          <div class="details-section">
+            <p><strong>DON’T SUBSCRIBE YOUR CAPCUT APP FOR THE NEXT 12 MONTHS. HERE IS A JUICIER FIX!</strong></p>
+            <p>Quit annoying lags, crashes or monthly pricey subscriptions for the next 12 months on your Capcut app</p>
+            <p>Choose peace of mind and take control of your content journey with <span class="highlight">CAPCUT PRO MEMBERSHIP</span> for just ₦5,000 instead of ₦9,800 that Capcut charges you per month.</p>
+    
+            <p class="disclaimer">DISCLAIMER: This is not a MOD version ❌ And yes, it’s Android, iOS and PC Supported!</p>
+    
+            <p>Slots are very limited, available for only the next 50 lucky persons 🔥</p>
+            <p>I bet, You don’t want to hear, “last spot has been taken” 😩</p>
+    
+            <p>Order now on Whatsapp via the link below:</p>
+            <p><a href="https://www.link/kvormf">https://www.link/kvormf</a></p>
+          </div>
+    </div>
+
+    <div class="card">
+        <div class="hero-image">
+            <img src="capcut-box.jpg" alt="CapCut Pro Box">
+            <div class="product-title">CapCut Pro - PC + ANDROID + iOS</div>
+          </div>
+        <div class="price-section">
+            CFA 2,213.28
+            <br>
+            <button class="closed-btn">Product sale closed</button>
+          </div>
+    
+          <div class="details-section">
+            <p><strong>DON’T SUBSCRIBE YOUR CAPCUT APP FOR THE NEXT 12 MONTHS. HERE IS A JUICIER FIX!</strong></p>
+            <p>Quit annoying lags, crashes or monthly pricey subscriptions for the next 12 months on your Capcut app</p>
+            <p>Choose peace of mind and take control of your content journey with <span class="highlight">CAPCUT PRO MEMBERSHIP</span> for just ₦5,000 instead of ₦9,800 that Capcut charges you per month.</p>
+    
+            <p class="disclaimer">DISCLAIMER: This is not a MOD version ❌ And yes, it’s Android, iOS and PC Supported!</p>
+    
+            <p>Slots are very limited, available for only the next 50 lucky persons 🔥</p>
+            <p>I bet, You don’t want to hear, “last spot has been taken” 😩</p>
+    
+            <p>Order now on Whatsapp via the link below:</p>
+            <p><a href="https://www.link/kvormf">https://www.link/kvormf</a></p>
+          </div>
+    </div>
+
+    <div class="card">
+        <div class="hero-image">
+            <img src="capcut-box.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">CapCut Pro - PC + ANDROID + iOS</div>
+          </div>
+        <div class="price-section">
+            CFA 2,213.28
+            <br>
+            <button class="closed-btn">Product sale closed</button>
+          </div>
+    
+          <div class="details-section">
+            <p><strong>DON’T SUBSCRIBE YOUR CAPCUT APP FOR THE NEXT 12 MONTHS. HERE IS A JUICIER FIX!</strong></p>
+            <p>Quit annoying lags, crashes or monthly pricey subscriptions for the next 12 months on your Capcut app</p>
+            <p>Choose peace of mind and take control of your content journey with <span class="highlight">CAPCUT PRO MEMBERSHIP</span> for just ₦5,000 instead of ₦9,800 that Capcut charges you per month.</p>
+    
+            <p class="disclaimer">DISCLAIMER: This is not a MOD version ❌ And yes, it’s Android, iOS and PC Supported!</p>
+    
+            <p>Slots are very limited, available for only the next 50 lucky persons 🔥</p>
+            <p>I bet, You don’t want to hear, “last spot has been taken” 😩</p>
+    
+            <p>Order now on Whatsapp via the link below:</p>
+            <p><a href="https://www.link/kvormf">https://www.link/kvormf</a></p>
+          </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Abraham peace Shop. All Rights Reserved.
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     }
 
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-    dots.forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === currentIndex);
-    });
-  }
-
-  function autoSlide() {
-    currentIndex++;
-    showSlide(currentIndex);
-  }
-
-  setInterval(autoSlide, 3000); // Change slide every 3 seconds
-</script>
-
-<!-- About Section -->
-<div class="about-section">
-
-    <h2>IF YOU DON’T READ THIS, THEY WILL KEEP SCAMMING YOU IN THIS ONLINE SPACE.</h2>
-
-    <img src="scam-alert.jpg" alt="scam-alert" class="about-image">
-
-<h2>ETHEREAL IS A SCAM</h2>
-
-<h2>Missing Tasks:</h2>
-<p>If you miss even one task from the day Ethereal launches, you won’t get paid. Their promoters won’t tell you the exact launch date — they will say anything just to make you join.</p>
-
-<h2>Proof of Payment Without Referrals:</h2>
-<p>Any payment proof you see comes from people who refer others. You can’t earn or withdraw without bringing in referrals. That’s how the scam works.</p>
-
-<h2>Ponzi Scheme:</h2>
-<p>A Ponzi scheme is an illegal setup where money from new members is used to pay those who refer them. Ethereal does the same — they deposit money into your dashboard, but you can’t withdraw unless you refer people. That’s a clear Ponzi scheme.</p>
-
-<h2>Early Birds Get Tricked:</h2>
-<p>If you join on the first day and complete all tasks for two months, they might pay you up to ₦100k. Then, they’ll ask you to share your success story to convince more people to join. Once many have joined, they disappear with the money.</p>
-
-<h2>Top Earners:</h2>
-<p>They always show “top earners” to make you rush into joining, thinking those people earned by doing tasks. The truth is, you only earn by scamming others — referring people.</p>
-
-<h2>No Withdrawal Without Referrals:</h2>
-<p>If you join late and don’t refer anyone, you won’t withdraw. Everything is built around referrals.</p>
-
-<h2>Vendors Are a Red Flag:</h2>
-<p>Because it’s not a legal business, they use “vendors” to collect your money and send it to the owner. Meanwhile, they deceive you with a fake dashboard while your data is gone.</p>
-
-<h2>HOW THEY OPERATE</h2>
-<p>They rob Peter to pay Paul. If you refer friends, they take 80% of their registration fee and give it to you. They keep the remaining 20%. When your referrals can’t withdraw, they’ll blame you. You’ll lose friends and peace of mind.</p>
-
-<h2>WHY ETHEREAL IS A SCAM</h2>
-<ul>
-<li>Their vendors promote other scam platforms that disappeared with people’s money.</li>
-<li>The CEO is unknown — you won’t know who to hold when things go wrong.</li>
-<li>Their so-called government certificate is fake. You can’t use it to arrest them.</li>
-</ul>
-
-<h2>WHY YOU SHOULD NOT REGISTER</h2>
-<p>Ponzi schemes are banned by the government. If caught, you can face up to 20 years in prison and a ₦20 million fine.
-If your friends lose money and report you, EFCC or police can arrest you — all because of ₦9k or ₦14k.</p>
-
-<h2>WHY THEY HIDE THE CEO</h2>
-<p>They never tell you who the CEO is unless you are among them. They do this to escape accountability. Most times, they operate for only 6 months to 1 year before vanishing.</p>
-
-<h2>THEIR PROMOTERS & RED FLAGS</h2>
-<p>Their promoters will promise you everything. Once you pay and register, they ignore or block you.</p>
-
-<h2>📅IF YOU WANT ME TO CONTINUE EXPOSING SCAMS PLEASE SUPPORT ME WITH ANY AMOUNT YOU HAVE📅</h2>
-<p>Now that I just saved you from wasting your ₦12k to register for the Ethereal scam, please also support me so that I can keep telling you and other people the truth. You can send any amount to say thank you.</p>
-
-    <a href="https://wa.me/2347044435672?text=I%20am%20ready%20to%20pay%20" target="_blank">
-    <button>CLICK HERE TO START</button>
-    </a> <!-- Open Register Modal -->
-</div>
-
-
-<div class="about-section">
-
-    <img src="scam-reviews.jpg" alt="scam review" class="about-image">
-    
-    <h2>LEGIT ONLINE BUSINESSES THAT CAN MAKE YOU A MILLIONAIRE</h2>
-    <p>I have a genuine business that has helped me and my friends earn over ₦200k monthly using just our phones. You can even scale it and teach others — they’ll pay you for the knowledge.</p>
-    <p>I’ll show you how to get 18,000 people to message you, ready to learn.</p>
-    <p>If 1,000 out of them pay ₦6k, that’s ₦6 million earned.</p>
-    <p>They’ll also earn ₦200k monthly applying what they learn — and can sell the same idea to others.</p>
-    <p>This type of knowledge is powerful and not free. You can learn it in just 2 weeks and start earning immediately.</p>
-
-    <h2>PROOF OF PAYMENTS & TESTIMONIES</h2>
-    <p>This business is real, unlike Ethereal. Here’s why you should choose it:</p>
-
-    <!-- Video Section -->
-        <div class="video-container">
-            <div id="sales-commission" class="tab-content active">
-                <video autoplay="" loop="" playsinline="" controls="" muted="" class="appl1-hdvd-xx">
-                    <source src="nuvia-stream-intro-vid.mp4" type="video/mp4"> <!-- Local video file -->
-                    Your browser does not support the video tag.
-                </video>
-                 <!-- Open Register Modal -->
-            </div>
-        </div>
-
-    <!-- Video Section -->
-        <div class="video-container">
-            <div id="sales-commission" class="tab-content active">
-                <video autoplay="" loop="" playsinline="" controls="" muted="" class="appl1-hdvd-xx">
-                    <source src="nuvia-stream-intro-vid.mp4" type="video/mp4"> <!-- Local video file -->
-                    Your browser does not support the video tag.
-                </video>
-                 <!-- Open Register Modal -->
-            </div>
-        </div>
-
-    <!-- Video Section -->
-        <div class="video-container">
-            <div id="sales-commission" class="tab-content active">
-                <video autoplay="" loop="" playsinline="" controls="" muted="" class="appl1-hdvd-xx">
-                    <source src="nuvia-stream-intro-vid.mp4" type="video/mp4"> <!-- Local video file -->
-                    Your browser does not support the video tag.
-                </video>
-                 <!-- Open Register Modal -->
-            </div>
-        </div>
-
-    <!-- Video Section -->
-        <div class="video-container">
-            <div id="sales-commission" class="tab-content active">
-                <video autoplay="" loop="" playsinline="" controls="" muted="" class="appl1-hdvd-xx">
-                    <source src="nuvia-stream-intro-vid.mp4" type="video/mp4"> <!-- Local video file -->
-                    Your browser does not support the video tag.
-                </video>
-                 <!-- Open Register Modal -->
-            </div>
-        </div>
-
-    <!-- Video Section -->
-        <div class="video-container">
-            <div id="sales-commission" class="tab-content active">
-                <video autoplay="" loop="" playsinline="" controls="" muted="" class="appl1-hdvd-xx">
-                    <source src="nuvia-stream-intro-vid.mp4" type="video/mp4"> <!-- Local video file -->
-                    Your browser does not support the video tag.
-                </video>
-                 <!-- Open Register Modal -->
-            </div>
-        </div>
-
-    <h2>HOW TO START & EARN</h2>
-    <ul>
-        <li>Pay a one-time ₦5k to join the VIP Mentorship Group.</li>
-        <li>After learning, you’ll pay ₦15k to launch your online shop.</li>
-        <li>No hidden fees afterward.</li>
-    </ul>
-    <p><strong>Note:</strong> The ₦5k is non-refundable and gives you access to learn everything before you commit.</p>
-    <p>I’ll teach you how to earn ₦200k monthly and grow it to ₦6 million or ₦10 million in one year.</p>
-
-    <a href="https://wa.me/2347044435672?text=I%20am%20ready%20to%20pay%20" target="_blank">
-        <button>CLICK HERE TO START</button>
-    </a> <!-- Open Register Modal -->
-
-</div>
-
-
-
-
-<!-- Tab Navigation -->
-<div class="tabs">
-    <a href="https://wa.me/2347044435672?text=I%20am%20ready%20to%20pay%20" target="_blank">
-    <button>CLICK HERE TO START</button>
-    </a> <!-- Open Register Modal -->
-</div>
-
-<!-- Tab Content 
-<div id="sales-commission" class="tab-content active">
-    <img src="nuvia-access-plan.jpg" alt="About Nuviastream" class="tab-image">
-    <button onclick="openproPackageModal()">View Structure</button> 
-</div>-->
-
-
-
-
-
-
-        <!-- Registration Section -->
-        <div class="registration-section">
-            <h2>JOIN ME TO START EARNING</h2>
-            <p>If you're willing to pay a non-refundable fee of 3k to join a group where I teach people (who now earn not less than 500k monthly), I will personally mentor you on how to earn just like them.</p>
-            <button onclick="openRegisterModal()">Register Now!</button> <!-- Open Register Modal -->
-            <p>CLICK HERE TO PAY NOW</p>
-            <div class="social-icons">
-                <a href="register.html" target="_blank">
-                    <img src="https://nuviamusics.com/images/logo-whatsapp.svg" class="white-svg" alt="WhatsApp"> <!-- Local icon -->
-                </a>
-                
-                <a href="register.html" target="_blank">
-                    <img src="https://nuviamusics.com/images/logo-tiktok.svg" class="white-svg" alt="TikTok"> <!-- Local icon -->
-                </a>
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- Fly-in Section for About Modal -->
-<!-- Pro Package Modal -->
-<!--<div class="modal" id="proPackageModal">
-    <button class="close-btn" onclick="closeproPackageModal()">
-    <img src="images/close-circle-outline.svg" alt="Close" class="white-svg">
-</button>
-
-<div class="modal-content">
-    <h2>🎵 CHOOSE YOUR NUVIA PLAN</h2>
-
-    
-    <div class="plan-card basic-tier">
-        <h3>🥉 BASIC TIER</h3>
-        <ul>
-            <li>⚡ <strong>Access Fee:</strong> ₦7,500 (Valid for 5 months)</li>
-            <li>⚡ <strong>Streaming Access:</strong> Online Only</li>
-            <li>⚡ <strong>Earning Potential:</strong> Limited</li>
-            <li>⚡ <strong>Streaming Revenue:</strong> Limited</li>
-            <li>❌ <strong>Offline Streaming:</strong> Not Available</li>
-            <li>📅 <strong>Subscription Expiry:</strong> 5 months</li>
-        </ul>
-        <a style="background-color:#f4c618; color: #fff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;" href="home.html">
-            Choose Basic Plan
-        </a>
-    </div>-->
-
-    <!-- PREMIUM TIER -->
-    <!--<div class="plan-card premium-tier">
-        <h3>🥇 PREMIUM TIER</h3>
-        <ul>
-            <li>⚡ <strong>Access Fee:</strong> ₦12,500 (Valid for 12 months)</li>
-            <li>⚡ <strong>Streaming Access:</strong> Online &amp; Offline</li>
-            <li>🔥 <strong>Earning Potential:</strong> Unlimited</li>
-            <li>💸 <strong>Streaming Revenue:</strong> Unlimited</li>
-            <li>📅 <strong>Subscription Expiry:</strong> 12 months</li>
-        </ul>
-        <a style="background-color:#f4c618; color: #fff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;" href="home.html">
-            Choose Premium Plan
-        </a>
-    </div>
-</div>
-
-</div>-->
-
-<!-- Silver Package Modal -->
-<!--<div class="modal" id="silverPackageModal">
-    <button class="close-btn" onclick="closesilverPackageModal()">
-        <img src="images/close-circle-outline.svg" alt="Close" class="white-svg">
-    </button>
-    <div class="modal-content">
-        <h2>🎯 SILVER PACKAGE</h2>
-        <h3><strong>Details:</strong></h3>
-        <ul>
-            <li>⚡ <strong>Registration Fee:</strong> $6 (₦6000)</li>
-            <li>⚡ <strong>Bonus:</strong> $5 (₦5000) instantly on your dashboard</li>
-            <li>⚡ <strong>Daily Earnings:</strong> $1.2 (₦1200) for playing games and watching videos</li>
-            <li>⚡ <strong>Referral Earnings:</strong> $5.2 (₦5200)</li>
-            <li>⚡ <strong>Spillover (1st level):</strong> $0.2 (₦200)</li>
-            <li>⚡ <strong>Spillover (2nd level):</strong> $0.1 (₦100)</li>
-            <li>⚡ <strong>TikTok Bonus:</strong> $1.5 (₦1500) for TikTok videos with over 1k views</li>
-        </ul>
-
-        <a style="background-color:#f4c618; color: #fff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;" href="home.html">
-                Register Now!
-            </a>
-    </div>
-</div>-->
-
-    <!-- Fly-in Section for Register Modal -->
-    <!--<div class="modal" id="registerModal">
-        <button class="close-btn" onclick="closeRegisterModal()">
-            <img src="images/close-circle-outline.svg" class="white-svg" alt="Close">
-        </button>
-        <div class="modal-content">
-            <h2>JOIN ME TO START EARNING</h2>
-            <p>
-                If you're willing to pay a non-refundable fee of 2k to join a group where I teach people (who now earn not less than 500k monthly), I will personally mentor you on how to earn just like them.
-            </p>
-            <a style="background-color:#f4c618; color: #fff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;" href="register.html">
-                CLICK HERE TO PAY NOW
-            </a>
-            <p>Join our verified social handles for more SCAM reviews</p>
-            <div class="social-icons">
-                <a href="register.html" target="_blank">
-                    <img src="images/logo-whatsapp.svg" class="white-svg" alt="WhatsApp"> 
-                </a>
-                
-                <a href="register.html" target="_blank">
-                    <img src="images/logo-tiktok.svg" class="white-svg" alt="TikTok"> 
-                </a>-->
-                
-            <!--</div>
-        </div>
-    </div>-->
-
-
-
-            <!-- Video Section 
-        <div class="video-container">
-            <video autoplay="" loop="" muted="" playsinline="" class="appl1-hdvd-xx">
-                <source src="nuvia-footer-video.mp4" type="video/mp4"> 
-                Your browser does not support the video tag.
-            </video>
-        </div> -->
-
-    <!-- Footer -->
-    <div class="footer">
-        <img src="nuvia-stream-logo.png" alt="Nuviastream Logo" class="footer-logo"> <!-- Local logo file -->
-        <p>Nuvia Website |2025. All rights reserved.</p>
-    </div>
-
-
-    <!--<script>
-        // About Modal Controls
-        function openAboutModal() {
-            document.getElementById("aboutModal").classList.add("active");
-        }
-
-        function closeAboutModal() {
-            document.getElementById("aboutModal").classList.remove("active");
-        }
-           
-        function openRegisterModal() {
-            window.location.href = "register.html";
-        }
-
-        function closeRegisterModal() {
-            document.getElementById("registerModal").classList.remove("active");
-        }
-        function openproPackageModal() {
-            document.getElementById("proPackageModal").classList.add("active");
-        }
-
-        function closeproPackageModal() {
-            document.getElementById("proPackageModal").classList.remove("active");
-        }
-        function opensilverPackageModal() {
-            document.getElementById("silverPackageModal").classList.add("active");
-        }
-
-        function closesilverPackageModal() {
-            document.getElementById("silverPackageModal").classList.remove("active");
-        }
-    </script>
-
-<script>
-
-    function openTab(evt, tabName) {
-    // Hide all tab content
-    const tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(content => {
-        content.classList.remove('active');
-    });
-
-    // Remove "active" class from all tab buttons
-    const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-
-    // Show the clicked tab content
-    document.getElementById(tabName).classList.add('active');
-
-    // Add "active" class to the clicked tab button
-    evt.currentTarget.classList.add('active');
-}
-
-</script>-->
-    
-
-
-</body></html>
+    // Animate review score from 2 to 5
+    let reviewScore = 2;
+    let interval = setInterval(() => {
+      if (reviewScore < 5) {
+        reviewScore++;
+        document.getElementById("score").textContent = reviewScore.toFixed(2);
+        document.getElementById("stars").textContent = '★'.repeat(reviewScore) + '☆'.repeat(5 - reviewScore);
+      } else {
+        clearInterval(interval);
+      }
+    }, 4000);
+
+    // Rotating chat popups
+    const messages = [
+      "I just Registered successfully, thank you!",
+      "Wow, I just earned my first 300k. God bless you!",
+      "You are a very good Mentor. Keep it up."
+    ];
+    let index = 0;
+    const chat = document.getElementById('chat');
+    const messageEl = document.getElementById('chat-message');
+
+    function showNextChat() {
+      chat.classList.remove('slide-out');
+      chat.style.display = 'flex';
+      messageEl.textContent = messages[index];
+      setTimeout(() => {
+        chat.classList.add('slide-out');
+        setTimeout(() => {
+          chat.style.display = 'none';
+          index = (index + 1) % messages.length;
+        }, 500);
+      }, 4000);
+    }
+    showNextChat();
+    setInterval(showNextChat, 8000);
+  </script>
+</body>
+    </html>
