@@ -108,6 +108,10 @@
     .submit-btn:hover {
       background-color: #3a003a;
     }
+
+    .forbtn {
+      text-align: center;
+    }
     .review-section {
       text-align: center;
       margin-top: 2em;
@@ -260,7 +264,9 @@ img {
             <p>I bet, You don’t want to hear, “last spot has been taken” 😩</p>
     
             <p>Order now on Whatsapp via the link below:</p>
+            <div class="forbtn">
             <a href="index.html"><button class="submit-btn">Register <span class="green">Now</span></button></a>
+            </div>
           </div>
     </div>
 
@@ -412,10 +418,10 @@ img {
     </div>
   </div>
 
+  <!--footer popup-->
   <div class="popup" id="popup">
-    <p>Offer expires in: <span class="countdown" id="countdown">00:700</span></p>
-    <p>Order now on Whatsapp via the link below:</p>
-    <a href="index.html"><button class="submit-btn">Register <span class="green">Now</span></button></a>
+    <p>Our Ongoing Class Will Soon: <span class="countdown" id="countdown">00:100</span></p>
+    <a href="index.html"><button class="submit-btn">Learn How To Money Online<span class="green">Now</span></button></a>
   </div>
 
   <div class="footer">
@@ -469,7 +475,7 @@ img {
     window.onload = function () {
       setTimeout(() => {
         document.getElementById('popup').classList.add('show');
-        startCountdown(700);
+        startCountdown(100);
       }, 1000);
     };
 
