@@ -413,7 +413,9 @@ img {
   </div>
 
   <div class="popup" id="popup">
-    <p>Offer expires in: <span class="countdown" id="countdown">00:10</span></p>
+    <p>Offer expires in: <span class="countdown" id="countdown">00:700</span></p>
+    <p>Order now on Whatsapp via the link below:</p>
+    <a href="index.html"><button class="submit-btn">Register <span class="green">Now</span></button></a>
   </div>
 
   <div class="footer">
@@ -467,7 +469,7 @@ img {
     window.onload = function () {
       setTimeout(() => {
         document.getElementById('popup').classList.add('show');
-        startCountdown(10);
+        startCountdown(700);
       }, 1000);
     };
 
