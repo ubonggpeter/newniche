@@ -157,6 +157,30 @@
      display: block;
      margin: 0 auto;
     }*/
+    /*Footer popup*/
+    .popup {
+      position: fixed;
+      bottom: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 1rem;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      height:100px;
+      max-width: 100%;
+      text-align: center;
+      transition: bottom 0.5s ease;
+    }
+    .popup.show {
+      bottom: 0;
+    }
+    .countdown {
+      color: #e60000;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
 
 /* ✅ Make all images responsive */
 img {
@@ -388,6 +412,10 @@ img {
     </div>
   </div>
 
+  <div class="popup" id="popup">
+    <p>Offer expires in: <span class="countdown" id="countdown">00:10</span></p>
+  </div>
+
   <div class="footer">
     &copy; 2025 MS LILLIAN. All Rights Reserved.
   </div>
@@ -434,6 +462,24 @@ img {
     }
     showNextChat();
     setInterval(showNextChat, 8000);
+
+    //Footer popup
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById('popup').classList.add('show');
+        startCountdown(10);
+      }, 1000);
+    };
+
+    function startCountdown(seconds) {
+      const countdownEl = document.getElementById("countdown");
+      let counter = seconds;
+      const interval = setInterval(() => {
+        countdownEl.textContent = `00:${counter < 10 ? '0' + counter : counter}`;
+        counter--;
+        if (counter < 0) clearInterval(interval);
+      }, 1000);
+    }
   </script>
 </body>
     </html>
