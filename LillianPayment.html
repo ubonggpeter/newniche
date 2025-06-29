@@ -282,9 +282,11 @@ img {
             <p onclick="navigator.clipboard.writeText('Ubong Peter Isonguyo')" style="cursor: pointer; color: #4d004d;">
                 ▫️ <strong>Name:</strong> Ubong Peter Isonguyo (Click to copy)
             </p>
+          
             <p onclick="navigator.clipboard.writeText('6067151384')" style="cursor: pointer; color: #4d004d;">
                 ▫️ <strong>Account Number:</strong> 6067151384 (Click to copy)
             </p>
+          
             <p onclick="navigator.clipboard.writeText('Moniepoint MFB')" style="cursor: pointer; color: #4d004d;">
                 ▫️ <strong>Bank Name:</strong> Moniepoint MFB (Click to copy)
             </p>
@@ -477,8 +479,8 @@ img {
 
   <!--footer popup-->
   <div class="popup" id="popup">
-    <p>Our Ongoing Class Will End Soon: <span class="countdown" id="countdown">00:100</span></p>
-    <a href="index.html"><button class="submit-btn">Learn How To Make Money Online <span class="green">Now</span></button></a>
+    <p>Payment details will expire soon<span class="countdown" id="countdown">00:100</span></p>
+    <a href="index.html"><button class="submit-btn">If you can't pay in Naira <span class="green">(CLICK HERE)</span></button></a>
   </div>
 
   <div class="footer">
@@ -532,7 +534,7 @@ img {
     window.onload = function () {
       setTimeout(() => {
         document.getElementById('popup').classList.add('show');
-        startCountdown(100);
+        startCountdown(1000);
       }, 1000);
     };
 
